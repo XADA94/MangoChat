@@ -8,7 +8,7 @@ class UsersTableSchema extends Schema {
     this.create('users', (table) => {
       table.increments()
       table.string('nickname').unique()
-      table.string('avatar').unique().defaultTo("avatar.png")
+      table.string('avatar').unique().defaultTo('avatar.png')
       table.string('email').unique()
       table.string('password', 60)
       table.timestamps()
